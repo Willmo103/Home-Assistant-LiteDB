@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
-import home_assistant_helper as hah
+import home_assistant_litedb as hah
 import re
 
 
