@@ -1,0 +1,9 @@
+.idea
+.vscode
+*.db
+*.log
+*.pyc
+*pycache*
+*.sqlite3
+*conf*.yaml
+*conf*.yml
