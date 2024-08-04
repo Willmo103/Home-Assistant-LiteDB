@@ -1,3 +1,5 @@
+# home_assistant_litedb/main.py
+
 import argparse
 import logging
 import os
@@ -27,7 +29,7 @@ def setup_logging(debug, run_no_logging):
     Setup logging configuration.
     """
     if not run_no_logging:
-        log_file = os.path.expanduser("~") + "\\home_assistant_helper.log"
+        log_file = os.path.expanduser("~") + "\\home_assistant_litedb.log"
         logging.basicConfig(
             filename=log_file, level=logging.DEBUG if debug else logging.INFO
         )
@@ -108,7 +110,7 @@ def save_entities_to_db(entities):
         for entity in entities:
             entity_id = entity["entity_id"]
             state = entity["state"]
-            friendly_name = entity["attributes"].get(  # noqa E501
+            friendly_name = entity["attributes"].get(
                 "friendly_name", "No friendly name"
             )
             entity_type = entity_id.split(".")[0]
@@ -190,7 +192,7 @@ def display_logs():
     """
     log_method_call("display_logs")
     try:
-        log_file = os.path.expanduser("~") + "\\home_assistant_helper.log"
+        log_file = os.path.expanduser("~") + "\\home_assistant_litedb.log"
         if os.path.exists(log_file):
             with open(log_file, "r") as file:
                 logs = file.readlines()
@@ -233,7 +235,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Home Assistant Helper Script")
+        description="Home Assistant LiteDB Script")
     parser.add_argument(
         "-d",
         "--debug",
