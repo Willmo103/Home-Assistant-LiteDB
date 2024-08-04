@@ -86,7 +86,15 @@ POLL_INTERVAL: 120
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT [License](LICENSE).
+
+## Roadmap
+
+- **Integration with Other Home Automation Platforms**
+  - Extend the functionality of Home-Assistant LiteDB to support data collection and management from other popular home automation platforms.
+  - Implement a unified interface to manage data from multiple platforms.
+
+Read the full [Roadmap](ROADMAP.md).
 
 ## Contributing
 
