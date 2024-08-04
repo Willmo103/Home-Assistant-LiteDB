@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9, 3.10]
+        python-version: [3.7, 3.8, 3.9, 3.10, 3.11]
 
     steps:
       - uses: actions/checkout@v2
@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "HA_URL: 'http://localhost:8123'" > conf.yml
           echo "HA_TOKEN: 'mock_token'" >> conf.yml
-          echo "DB_PATH: '$HOME/HomeAssistantHelper.db'" >> conf.yml
+          echo "DB_PATH: '$HOME/HomeAssistantLiteDB.db'" >> conf.yml
           echo "POLL_INTERVAL: 120" >> conf.yml
       - name: Lint with flake8
         run: |

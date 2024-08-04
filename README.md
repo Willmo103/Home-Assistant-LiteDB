@@ -1,7 +1,6 @@
+# Home Assistant LiteDB
 
-# Home Assistant Helper
-
-Home Assistant Helper is a Python script designed to interact with Home Assistant, fetch entities, save them to a local SQLite database, and provide various command-line functionalities.
+Home Assistant LiteDB is a Python script designed to interact with Home Assistant, fetch entities, save them to a local SQLite database, and provide various command-line functionalities.
 
 ## Features
 
@@ -16,8 +15,8 @@ Home Assistant Helper is a Python script designed to interact with Home Assistan
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/willmo103/home_assistant_helper.git
-    cd home_assistant_helper
+    git clone https://github.com/willmo103/home_assistant_litedb.git
+    cd home_assistant_litedb
     ```
 
 2. Create a virtual environment and install dependencies:
@@ -51,25 +50,25 @@ Home Assistant Helper is a Python script designed to interact with Home Assistan
 1. Fetch entities and save to database:
 
     ```sh
-    python home_assistant_helper.py
+    python home_assistant_litedb/main.py
     ```
 
 2. Run in debug mode:
 
     ```sh
-    python home_assistant_helper.py --debug
+    python home_assistant_litedb/main.py --debug
     ```
 
 3. Purge the database:
 
     ```sh
-    python home_assistant_helper.py --purge
+    python home_assistant_litedb/main.py --purge
     ```
 
 4. Display the last 50 rows of logs:
 
     ```sh
-    python home_assistant_helper.py --logs
+    python home_assistant_litedb/main.py --logs
     ```
 
 ## Configuration
@@ -81,13 +80,21 @@ Example `conf.yml`:
 ```yaml
 HA_URL: 'http://192.168.xxx.xxx:8123'
 HA_TOKEN: '<your_long_lived_access_token>'
-DB_PATH: 'C:\\Users\\YourUsername\\HomeAssistantHelper.db'
+DB_PATH: 'C:\\Users\\YourUsername\\HomeAssistantLiteDB.db'
 POLL_INTERVAL: 120
 ```
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT [License](LICENSE).
+
+## Roadmap
+
+- **Integration with Other Home Automation Platforms**
+  - Extend the functionality of Home-Assistant LiteDB to support data collection and management from other popular home automation platforms.
+  - Implement a unified interface to manage data from multiple platforms.
+
+Read the full [Roadmap](ROADMAP.md).
 
 ## Contributing
 
