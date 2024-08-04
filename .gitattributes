@@ -1,0 +1,26 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted to native line endings on checkout.
+*.py text
+*.yml text
+*.yaml text
+*.md text
+*.sh text
+*.bat text
+*.txt text
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.py diff=python
+*.md diff=markdown
+*.py linguist-language=Python
+*.lock merge=ours
+*.sh eol=lf
