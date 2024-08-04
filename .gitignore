@@ -7,3 +7,4 @@
 *.sqlite3
 *conf*.yaml
 *conf*.yml
+!example.conf.yaml

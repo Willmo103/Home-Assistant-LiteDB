@@ -1,0 +1,4 @@
+HA_URL: "http://192.168.xxx.xxx:8123"
+HA_TOKEN: "<your_long_lived_access_token>"
+DB_PATH: 'C:\\Users\\YourUsername\\HomeAssistantHelper.db'
+POLL_INTERVAL: 120
